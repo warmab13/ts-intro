@@ -4,6 +4,7 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter'
+import { charmander } from './bases/03-clases'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -14,7 +15,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
     <h1>Vite + TypeScript + Cosas Raras with ${name}, is ${age} years old</h1>
-    <h3>My pokemons are: ${pokemons}</h3>
+    <h3>My pokemons are: ${charmander.name}</h3>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
